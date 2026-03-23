@@ -1,24 +1,66 @@
-# project1_5.1
-First practical application assignment of the program
-# Customer Coupon Acceptance Analysis
+# Will a Customer Accept the Coupon?
 
-## Project Overview
-This project analyzes survey data from the UCI Machine Learning Repository to understand 
-why drivers choose to accept or reject mobile coupons. 
-The analysis identifies key demographic and environmental factors that influence consumer behavior.
+## Overview
+This project analyzes survey data from the UCI Machine Learning Repository to determine what factors influence whether a driver accepts a coupon. The dataset describes driving scenarios such as destination, current time, weather, passenger, and coupon type, and records whether the customer accepted the coupon.
 
-## Key Findings
-- **Convenience Wins:** Carry-out and inexpensive restaurant coupons are accepted over 70% of the time.
-- **The Power of Friends:** Drivers are roughly 15% more likely to accept a coupon if they have friends in the car.
-- **Weather Matters:** Sunny days lead to significantly higher coupon conversion rates than rainy or snowy days.
-- **Behavioral Habit:** Frequent visitors to a specific venue (like a Coffee House) are the most reliable targets for new coupons.
+The goal of this project is to use Python, pandas, Matplotlib, and Seaborn to explore differences between customers who accepted a coupon and those who did not.
 
-## Repository Structure
-- `data/`: Contains the raw `coupons.csv` file.
-- `notebooks/`: The Jupyter Notebook containing the full EDA.
-- `images/`: Visualizations generated during the analysis.
+## Project Goal
+This analysis answers the question:
 
-## How to Run
-1. Clone this repository.
-2. Install dependencies: `pip install pandas matplotlib seaborn`.
-3. Open `notebooks/Practical_Application_1.ipynb` to view the analysis.
+**Will a customer accept the coupon?**
+
+Using exploratory data analysis and visualization, the notebook identifies patterns in coupon acceptance across customer habits, trip context, demographics, and coupon categories.
+
+## Dataset
+The dataset was collected through a survey on Amazon Mechanical Turk and is published through the **UCI Machine Learning Repository**.
+
+The response variable is:
+
+- `Y = 1` → customer accepted the coupon
+- `Y = 0` → customer did not accept the coupon
+
+The dataset includes several coupon categories, such as:
+
+- Less expensive restaurants (under $20)
+- Coffee House
+- Carryout & Takeaway
+- Bar
+- More expensive restaurants ($20–$50)
+
+## Repository Contents
+This repository should include the following files and folders:
+
+```text
+project-folder/
+│
+├── README.md
+├── requirements.txt
+├── notebooks/
+│   └──Practical_Application_1.ipynb
+├── data/
+│   └── coupons.csv
+└── images/
+    ├── acceptance_by_type.png
+    ├── coffeehouse_frequency.png
+    └── bar_frequency.png
+    
+```
+
+
+## Setup and Start Instructions
+
+```bash
+git clone <your-repository-url>
+cd <your-repository-folder>
+git pull origin main
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Start notebook:
+
+```bash
+jupyter notebook
+```
