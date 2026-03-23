@@ -3,7 +3,9 @@ First practical application assignment of the program
 # Customer Coupon Acceptance Analysis
 
 ## Project Overview
-This project analyzes survey data from the UCI Machine Learning Repository to understand why drivers choose to accept or reject mobile coupons. The analysis identifies key demographic and environmental factors that influence consumer behavior.
+This project analyzes survey data from the UCI Machine Learning Repository to understand 
+why drivers choose to accept or reject mobile coupons. 
+The analysis identifies key demographic and environmental factors that influence consumer behavior.
 
 ## Key Findings
 - **Convenience Wins:** Carry-out and inexpensive restaurant coupons are accepted over 70% of the time.
